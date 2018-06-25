@@ -1,0 +1,431 @@
+/*================
+Estilos Generales
+==================*/
+*{
+     margin: 0;
+     padding: 0;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    -o-box-sizing: border-box; 
+    -ms-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+
+/*====================
+Animación de la pagina
+======================*/
+@-webkit-keyframes slide{
+    0% {
+        margin-top: 150%;
+    }60%{
+        margin-top: -5%;
+    }100%{
+        margin-top: 0%;
+    }
+}
+
+/*==============
+Estilos al Body
+================*/
+
+body {
+    -webkit-animation: slide 1s forwards;
+	font-family: 'Dancing Script', cursive;
+	background: #02010a;
+}
+
+/*===============================
+Estilos al Contendedor Principal
+=================================*/
+
+.Contenedor {
+    margin: auto;
+    width: 90%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+}
+
+/*===================
+Estilos a los Headers
+=====================*/
+
+header {
+    background:#5b7989;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin:auto;
+    padding: 15px 0;
+}
+
+/*===============
+Estilos al Título
+=================*/
+
+header .titulo h1{
+        color: #fff;
+        margin-left: 30px;
+}
+
+/*==============
+Estilos al Menú
+================*/
+
+header .menú a{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 35px;
+    font-size: 18px;
+}
+
+header .menú a:hover{
+    text-decoration: underline;
+}
+
+/*===================
+Estilos para el Main
+=====================*/
+
+.main{
+    background:#82c3a6;
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+.main article .vista4 img {
+    width: 100%;
+    vertical-align: top;
+    border: 1px solid black;
+    -moz-box-box-shadow: 2px 2px 10px #02010a;
+    -webkit-box-shadow: 2px 2px 10px #02010a;   
+}
+
+/*====================
+Estilos para el Second
+======================*/
+
+.Second {
+    background-color: #d5c75f;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
+    /*border:5px solid red;*/
+}
+
+.Second .Cont-Paisaje  {
+    width: 50%;
+    padding: 10px;
+   /*padding-right: 10px;*/
+   /*border:1px solid red;*/
+}
+
+.Second .Cont-Paisaje h2{
+    color:black;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    text-decoration: underline;
+   /* border:5px solid red;*/
+}
+
+.Second .Cont-Paisaje img{
+    width: 100%;
+    vertical-align: top; 
+    border: 1px solid black;
+}
+
+.Second .Cont-Paisaje img:hover{
+    transform: rotate(10deg);
+   -moz-box-box-shadow: 2px 2px #82c3a6;
+   -webkit-box-shadow: 2px 2px #82c3a6;
+    border: 2px;
+}
+
+.Second .Retrato-Cont{
+    width: 50%;
+    padding: 10px;
+   /*padding-left: 10px;*/
+}
+
+.Second .Retrato-Cont h2{
+    color:black;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+.Second .Retrato-Cont img{
+    width: 100%;
+    /*height: 76%;*/
+    vertical-align: top;
+    border: 1px solid black;
+}
+
+.Second .Retrato-Cont img:hover{
+    transform: translate(20px, 5px);
+    -moz-box-box-shadow: 2px 2px #82c3a6;
+    -webkit-box-shadow: 2px 2px #82c3a6;
+    border: 2px;
+}
+
+/*====================================
+Contenedor Section para Paisajes.html
+======================================*/
+.Box-Img-P{
+    background-color: #d5c75f;
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-around;  
+    /*margin: auto;*/
+}
+
+.Box-Img-P .Img-paisajes img{
+    width: 100%;
+    padding: 10px;
+    max-width: 290px;
+    vertical-align: top;
+    /*border: 1px solid black;*/
+}
+.Box-Img-P .Img-paisajesDown img{
+    width: 100%;
+    padding: 10px;
+    max-width: 290px;
+    vertical-align: top;
+    /*border: 1px solid black; */
+}
+
+.img1 {
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+}
+.grises{
+    -webkit-filter:grayscale(100%);
+    -moz-filter:grayscale(100%);
+}
+.img3 {
+    -webkit-filter: sepia(90%);
+    -moz-filter: sepia(90%);
+}
+
+/*====================================
+Contenedor Section para Retratos.html
+======================================*/
+
+.Box-Img-R{
+    background-color: #d5c75f;
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-around;  
+}
+
+.Box-Img-R .Img-retratosUp img{
+    width: 100%;
+    padding: 10px;
+    max-width: 290px;
+    vertical-align: top;
+    /*border: 1px solid black;*/
+}
+.Box-Img-R .Img-retratosDown img{
+    width: 100%;
+    padding: 10px;
+    max-width: 290px;
+    vertical-align: top;
+    /*border: 1px solid black; */
+}
+
+.img1 {
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+}
+.grises{
+    -webkit-filter:grayscale(100%);
+    -moz-filter:grayscale(100%);
+}
+.img3 {
+    -webkit-filter: sepia(90%);
+    -moz-filter: sepia(90%);
+}
+
+/*====================
+Estilos para el Footer
+======================*/
+
+footer {
+    width: 90%;
+    margin: auto; 
+    background: #c6d5c5;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+/*============
+Div Contactos
+==============*/
+.contactos {
+    /*border:5px solid red;*/
+    padding: 15px;
+}
+
+.contactos h2{
+    /*text-decoration: underline;*/
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.contactos ul {
+    list-style: none;
+}
+
+.contactos ul li a {
+    list-style: none;
+    color: black;
+}
+
+/*==========
+Div Terminos
+============*/
+.Términos {
+    /*border:5px solid red;*/
+    padding: 15px;
+}
+
+.Términos h2 {
+    /*text-decoration: underline;*/
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+/*================
+Div Redes-Sociales
+==================*/
+.Redes-Sociales{
+    /*border:5px solid red;*/
+    padding: 20px;
+}
+
+.Redes-Sociales h2{
+    /*text-decoration: underline;*/
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.Redes-Sociales p{
+    padding-bottom: 10px;
+}
+
+.Redes-Sociales .Facebook{
+    padding-bottom: 15px;
+}
+
+.Redes-Sociales .Twitter{
+    padding-bottom: 15px;
+}
+
+/*==========
+Div Derechos
+============*/
+.Derechos{
+    /*border:5px solid red;*/
+    padding: 20px;
+}
+.Derechos h2{
+    text-decoration: underline;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.Derechos p{
+    padding-bottom: 10px;
+}
+
+/*===============
+Div Media Queries
+=================*/
+@media screen and (max-width: 900px){
+
+    header{
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    header .menú{
+        padding-top: 20px;
+        padding-left: 60px;
+    }
+
+    .Second{
+        flex-direction: column;  
+    }
+
+    .Second .Cont-Paisaje{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .Second .Retrato-Cont{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .Box-Img-P .Img-paisajes img{
+        width: 100%;
+        max-width: 100%;
+    }
+     .Box-Img-P .Img-paisajesDown img{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .Box-Img-R .Img-retratosUp img{
+        width: 100%;
+        max-width: 100%;
+    }
+     .Box-Img-R .Img-retratosDown img{
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 750px){
+    
+    footer{
+        flex-direction: column; 
+    }
+    
+}
+
+@media screen and (max-width: 450px){
+
+    header h1{
+        text-align: center;
+    }
+    header .menú{
+       padding-left: 60px;
+    }
+
+    footer{
+        flex-direction: column; 
+    }
+}
+
+
